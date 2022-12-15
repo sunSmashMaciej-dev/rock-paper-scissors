@@ -8,6 +8,11 @@ const playHand = ['rock', 'paper', 'scissors'];
 //Get computer's choice:
     //Randomize selection
     //Store result
+function getComputerChoice() {
+    let computerSelection = playHand[Math.floor(Math.random() * playHand.length)];
+    return(computerSelection);
+}
+console.log(getComputerChoice());
 
 //Display player's round result
     //"You win!!!" (how they won e.g. Paper beats Rock)
