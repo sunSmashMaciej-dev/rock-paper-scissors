@@ -47,6 +47,8 @@ function playRound(playerSelection, computerSelection) {
     }
   
 }
+console.log('You played ' + playerSelection);
+console.log('The computer played ' + computerSelection);
 console.log(playRound(playerSelection, computerSelection));
 
 //Repeat round 5 times
