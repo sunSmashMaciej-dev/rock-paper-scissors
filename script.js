@@ -1,20 +1,20 @@
-//Establish rules of the game:
-//Rock>scissors, scissors>paper, paper>rock, both same=tie
+//Establish choices for game
+const playHand = ['rock', 'paper', 'scissors'];
 
-    //Get player's choice:
-        //Prompt player for selection
-        //Store result
+//Get player's choice:
+    //Prompt player for selection
+    //Store result
 
-    //Get computer's choice:
-        //Randomize selection
-        //Store result
+//Get computer's choice:
+    //Randomize selection
+    //Store result
 
-    //Display player's round result
-        //"You win!!!" (how they won e.g. Paper beats Rock)
-            //else "You lose :(" (how they lost)
-            //else if tie "Round is a tie."
-        //Win gets 1 point, lose or tie gets none
-        //Store result
+//Display player's round result
+    //"You win!!!" (how they won e.g. Paper beats Rock)
+        //else "You lose :(" (how they lost)
+        //else if tie "Round is a tie."
+    //Win gets 1 point, lose or tie gets none
+    //Store result
 
 //Repeat round 5 times
 
