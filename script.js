@@ -4,6 +4,11 @@ const playHand = ['rock', 'paper', 'scissors'];
 //Get player's choice:
     //Prompt player for selection
     //Store result
+function getPlayerChoice() {
+    let playerSelection = prompt('What will you choose: rock, paper or scissors?');
+    return(playerSelection.toLowerCase());
+}
+console.log(getPlayerChoice())
 
 //Get computer's choice:
     //Randomize selection
