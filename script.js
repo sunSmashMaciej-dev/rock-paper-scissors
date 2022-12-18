@@ -59,6 +59,7 @@ function playRound(playerSelection, computerSelection) {
     console.log('You played ' + playerSelection);
     console.log('The computer played ' + computerSelection);
     console.log(roundResult);
+    //Display player and cpu points
     console.log('Score: computer ' + cpuPoints + ' wins, You ' + playerPoints + ' wins.')
 }
 let gameResult = '';
@@ -69,10 +70,13 @@ function game() {
         playerSelection = getPlayerChoice();
         playRound(playerSelection, computerSelection);    
     }
+    //After 5 rounds:
+    //If either has more points declare winner
     if(playerPoints > cpuPoints){
         gameResult ='You won the game!!!';
     }else if(playerPoints < cpuPoints){
         gameResult ='You lose';
+    //else if tie game display tie game
     }else{
         gameResult ='It\'s a tie game through and through';
     }
@@ -83,11 +87,5 @@ function game() {
 //console.log('The computer played ' + computerSelection);
 //console.log(playRound(playerSelection, computerSelection));
 
-
-
-//After 5 rounds:
-    //Display player and cpu points
-    //If either has more points declare winner
-        //else if tie game display tie game
 
 //Ask if player wants to play again
