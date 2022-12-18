@@ -61,15 +61,22 @@ function playRound(playerSelection, computerSelection) {
     console.log(roundResult);
     console.log('Score: computer ' + cpuPoints + ' wins, You ' + playerPoints + ' wins.')
 }
-
+let gameResult = '';
 //Repeat round 5 times
 function game() {
     for (let i = 0; i < 5; i++) {
         computerSelection = getComputerChoice();
         playerSelection = getPlayerChoice();
-        playRound(playerSelection, computerSelection);
-        
+        playRound(playerSelection, computerSelection);    
     }
+    if(playerPoints > cpuPoints){
+        gameResult ='You won the game!!!';
+    }else if(playerPoints < cpuPoints){
+        gameResult ='You lose';
+    }else{
+        gameResult ='It\'s a tie game through and through';
+    }
+    return(gameResult);
 
 }
 //console.log('You played ' + playerSelection);
