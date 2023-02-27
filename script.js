@@ -60,8 +60,8 @@ function playRound() {
     console.log('The computer played ' + computerSelection);
     console.log(roundResult);
     //Display player and cpu points
-    console.log('Score: computer ' + cpuPoints + ' wins, You ' + playerPoints 
-                + ' wins.');
+    console.log('Score: computer ' + cpuPoints + ' wins, You ' + playerPoints +
+                ' wins.');
 }
 let gameResult = '';
 //Repeat round 5 times
