@@ -17,16 +17,16 @@ function getComputerChoice() {
     return(computerChoice);
 }
 
-//Declare parameters for playRound function
-let playerSelection = getPlayerChoice();
-let computerSelection = getComputerChoice();
-
 //Round result values
 let roundResult = '';
 playerPoints = 0;
 cpuPoints = 0;
 
-function playRound(playerSelection, computerSelection) {
+function playRound() {
+    // Declare parameters for playRound function
+    let playerSelection = getPlayerChoice();
+    let computerSelection = getComputerChoice();
+    
     //Display player's round result:
     //"You win!!!" (how they won e.g. Paper beats Rock)
     if(playerSelection === 'rock' && computerSelection === 'scissors') {
