@@ -66,9 +66,7 @@ let gameResult = '';
 //Repeat round 5 times
 function game() {
     for (let i = 0; i < 5; i++) {
-        computerSelection = getComputerChoice();
-        playerSelection = getPlayerChoice();
-        playRound(playerSelection, computerSelection);    
+        playRound();    
     }
     //After 5 rounds:
     //If either has more points declare winner
