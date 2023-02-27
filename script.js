@@ -81,9 +81,10 @@ function game() {
     return(gameResult);
 
 }
-//console.log('You played ' + playerSelection);
-//console.log('The computer played ' + computerSelection);
-//console.log(playRound(playerSelection, computerSelection));
+
+//Call game() function
+
+game ();
 
 
 //Ask if player wants to play again
