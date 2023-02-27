@@ -78,7 +78,7 @@ function game() {
     }else{
         gameResult ='It\'s a tie game through and through';
     }
-    return(gameResult);
+    console.log(gameResult);
 
 }
 
